@@ -20,7 +20,7 @@ export default function NavBar() {
                     className="inflex-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
                     activeClassName="text-red-100 bg-red-700"
                     >
-                    Blog Posts
+                    Portfolio
                 </NavLink>
                 <NavLink 
                     to="/project" 
@@ -38,12 +38,14 @@ export default function NavBar() {
                 </NavLink>
             </nav>
             <div className="inline-flex py-3 px-3 my-6">
+            <p className="text-red-200 inline-flex py-1 px-1 my-1">LinkedIn</p>
                 <SocialIcon 
                     url="https://linkedin.com/in/art-lees-b894b5" 
                     className="mr-4" 
                     target="_blank" 
                     fgColor="#fff" 
-                    style={{ height: 35, width: 35}} />
+                    style={{ height: 35, width: 35}} /> 
+                <p className="text-red-200 inline-flex py-1 px-1 my-1">GitHub</p>
                 <SocialIcon url="https://github.com/lilongan" className="mr-4" target="_blank" fgColor="#fff" style={{ height: 35, width: 35}} />
                 {/* <SocialIcon url="" className="mr-4" target="_blank" fgColor="#fff" style={{ height: 35, width: 35}} /> */}
             </div>
