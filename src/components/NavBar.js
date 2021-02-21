@@ -22,7 +22,7 @@ export default function NavBar() {
                     >
                     Portfolio
                 </NavLink>
-                <NavLink 
+                {/* <NavLink 
                     to="/project" 
                     className="inflex-flex items-center py-3 px-3 my-6 rounded text-red-200 hover:text-green-800"
                     activeClassName="text-red-100 bg-red-700"
@@ -35,18 +35,25 @@ export default function NavBar() {
                     activeClassName="text-red-100 bg-red-700"
                     >
                     About Me!
-                </NavLink>
+                </NavLink> */}
             </nav>
             <div className="inline-flex py-3 px-3 my-6">
-            <p className="text-red-200 inline-flex py-1 px-1 my-1">LinkedIn</p>
+            <p className="text-red-200 inline-flex py-1 px-1 my-1"></p>
                 <SocialIcon 
                     url="https://linkedin.com/in/art-lees-b894b5" 
+                    label="LinkedIn"
                     className="mr-4" 
                     target="_blank" 
                     fgColor="#fff" 
                     style={{ height: 35, width: 35}} /> 
-                <p className="text-red-200 inline-flex py-1 px-1 my-1">GitHub</p>
-                <SocialIcon url="https://github.com/lilongan" className="mr-4" target="_blank" fgColor="#fff" style={{ height: 35, width: 35}} />
+                <p className="text-red-200 inline-flex py-1 px-1 my-1"></p>
+                <SocialIcon 
+                    url="https://github.com/lilongan" 
+                    label="GitHub"
+                    className="mr-4" 
+                    target="_blank" 
+                    fgColor="#fff" 
+                    style={{ height: 35, width: 35}} />
                 {/* <SocialIcon url="" className="mr-4" target="_blank" fgColor="#fff" style={{ height: 35, width: 35}} /> */}
             </div>
         </div>
